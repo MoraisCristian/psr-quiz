@@ -5,6 +5,8 @@ RUN apt-get update && apt-get install -y \
     curl \
     vim \
     zip \
-    unzip
+    unzip 
+
+RUN docker-php-ext-install pdo_mysql
 
 WORKDIR /var/www
